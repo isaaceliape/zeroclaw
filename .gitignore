@@ -1,0 +1,41 @@
+# ZeroClaw runtime state
+daemon_state.json
+.secret_key
+audit.log
+
+# Secrets and credentials
+config.toml
+auth-profiles.json
+*.local.json
+
+# Cache and temporary files
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# Local settings
+.claude/settings.local.json
+
+# Runtime state
+workspace/sessions/*
+workspace/state/*
+workspace/cron/*
+!workspace/sessions/.gitkeep
+!workspace/cron/.gitkeep
+
+# Memory/logs (keep structure, ignore content)
+workspace/memory/*.md
+!workspace/memory/.gitkeep
+
+# Archive
+workspace/archive/*
+!workspace/archive/.gitkeep
+
+# IDE and OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
